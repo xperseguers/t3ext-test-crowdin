@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2024-11-19T09:32:07Z" product-name="test_crowdin">
+        <header/>
+        <body>
+            <trans-unit id="saveConfiguration">
+                <target>Konfiguration speichern</target>
+            </trans-unit>
+            <trans-unit id="saveCloseConfiguration">
+                <target>Konfiguration speichern und schließen</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
