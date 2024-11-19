@@ -26,16 +26,12 @@ Within your TYPO3 extension repository, create a `.crowdin.yml` file at root wit
 following content:
 
 ```yaml
-"preserve_hierarchy": true
-"files": [
-  {
-    "source": "/Resources/Private/Language/*.xlf",
-    "translation": "/%original_path%/%two_letters_code%.%original_file_name%",
-    "ignore": [
-      "/**/%two_letters_code%.%original_file_name%"
-    ]
-  }
-]
+preserve_hierarchy: 1
+files:
+  - source: /Resources/Private/Language/*.xlf
+    translation: /%original_path%/%two_letters_code%.%original_file_name%
+    ignore:
+      - /**/%two_letters_code%.%original_file_name%
 ```
 
 ### Step 2: Set Up the Project in Crowdin
