@@ -4,6 +4,7 @@
         <header/>
         <body>
             <trans-unit id="tx_testcrowdin_domain_model_fruit">
+                <source>Fruit</source>
                 <target>Frucht</target>
             </trans-unit>
             <trans-unit id="tx_testcrowdin_domain_model_fruit.name">
