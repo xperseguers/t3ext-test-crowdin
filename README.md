@@ -55,3 +55,30 @@ extension.
 In the Crowdin project settings, go to the Integrations tab and click on the button
 "Browse Integrations", then choose "GitHub". Follow the instructions to connect your
 GitHub repository to Crowdin.
+
+Once installed, the Integrations tab will show the GitHub integration with a button
+to "Set Up Integration". Click on it and choose the mode "Source and translation files mode".
+
+At this point, Crowdin will request additional permissions to access your repository.
+You should accept the default permissions and click on the "Authorize crowdin" button.
+
+Then follow the instructions to configure the integration:
+
+1. Select the repository from the list of your GitHub repositories.
+2. Select the branch to use for synchronization (usually `main` or `master`).
+   - When ticking the branch, Crowdin will suggest a "Service Branch Name"
+     `l10n_main` (or `l10n_master`), which is the branch where Crowdin will push
+     the translations. You can keep the default value.
+3. Click the pencil icon next to the Service Branch Name to edit configuration.
+4. When asked for the Configuration file name, change it from `crowdin.yml` to
+   `.crowdin.yml` and click "Continue". This will effectively use the configuration
+   we created in step 1 and ensure that everything is properly configured for your
+   TYPO3 extension.
+5. Click the "Save" button to save the configuration.
+6. Back to the main GitHub integration page, you should see a circled checkmark next
+   to the Service Branch Name, indicating that the integration is correctly set up.
+7. Ensure the checkbox "One-time translation import after the branch is connected" is
+   ticked.
+8. Do not tick the checkbox "Push Sources" as the sources are already in the repository
+   and changes are managed within the extension repository **and not in Crowdin**.
+9. Click the "Save" button to save the configuration of the integration. 
