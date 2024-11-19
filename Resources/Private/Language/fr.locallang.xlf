@@ -4,6 +4,7 @@
         <header/>
         <body>
             <trans-unit id="saveConfiguration">
+                <source>Save configuration</source>
                 <target>Enregistrer la configuration</target>
             </trans-unit>
             <trans-unit id="saveCloseConfiguration">
